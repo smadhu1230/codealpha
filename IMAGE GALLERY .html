@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="gallery-container">
+    <div class="gallery">
+      <!-- Thumbnails -->
+      <div class="thumbnails">
+        <img src="butterfly1.png" alt="Image 1" onclick="showImage(0)">
+        <img src="bf2.jpg" alt="Image 2" onclick="showImage(1)">
+        <img src="panimalar3.png" alt="Image 3" onclick="showImage(2)">
+        <img src="sun.jpg" alt="Image 4" onclick="showImage(3)">
+      </div>
+
+      <!-- Main Image Display -->
+      <div class="main-image-container">
+        <img id="mainImage" src="apple.jpg" alt="Main Image">
+        <!-- Navigation Buttons -->
+        <button class="prev" onclick="prevImage()">&#10094;</button>
+        <button class="next" onclick="nextImage()">&#10095;</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
